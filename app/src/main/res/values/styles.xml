@@ -17,4 +17,43 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="Texto_Principal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">70dp</item>
+    </style>
+
+    <style name="Texto_Secundario">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+
+    <style name="Boton_Login">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="Titulo_Principal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">80dp</item>
+        <item name="android:layout_above">@+id/textView5</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Titulo_Secundario">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
 </resources>
