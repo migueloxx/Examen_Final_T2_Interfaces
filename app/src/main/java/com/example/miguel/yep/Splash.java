@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 public class Splash extends AppCompatActivity {
@@ -23,12 +22,13 @@ public class Splash extends AppCompatActivity {
         text.setTypeface(myFont);
         text2.setTypeface(myFont);
 
-        Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);
-        Splash.startAnimation(shake);
+      /*  Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);
+        Splash.startAnimation(shake);*/
 
     }
 
     private static void startAnimation(Animation shake) {
+
     }
 
     private void openApp(boolean locationPermission) {
