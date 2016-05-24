@@ -75,6 +75,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             // Aqui es donde debemos recibir los datos de Firebase de cada edificio
                             .position(marcador)
                             .title(edificio.getNombre())
+                            .snippet(edificio.getFotografia())
                     );
                     mMap.setInfoWindowAdapter(new UserInfoWindowAdapter(getLayoutInflater()));
                 }
