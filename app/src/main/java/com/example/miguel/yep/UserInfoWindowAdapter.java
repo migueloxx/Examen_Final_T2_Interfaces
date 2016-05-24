@@ -17,8 +17,9 @@ public class UserInfoWindowAdapter implements GoogleMap.InfoWindowAdapter{
     LayoutInflater inflater= null;
     Context c;
 
-    UserInfoWindowAdapter(LayoutInflater inflater){
-        this.inflater=inflater;
+    UserInfoWindowAdapter(Context ctx,LayoutInflater inflater){
+        this.inflater = inflater;
+        this.c = ctx;
     }
 
     @Override
@@ -39,7 +40,7 @@ public class UserInfoWindowAdapter implements GoogleMap.InfoWindowAdapter{
         // TextView description = (TextView)infoWindows.findViewById(R.id.snippet);
         title.setText(marker.getTitle());
         // description.setText(marker.getSnippet());
-        String snippet = String.valueOf(infoWindows.findViewById(R.id.snippet));
+        String snippet = marker.getSnippet();
 
 
 

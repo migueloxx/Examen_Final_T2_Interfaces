@@ -77,7 +77,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .title(edificio.getNombre())
                             .snippet(edificio.getFotografia())
                     );
-                    mMap.setInfoWindowAdapter(new UserInfoWindowAdapter(getLayoutInflater()));
+                    mMap.setInfoWindowAdapter(new UserInfoWindowAdapter(getApplicationContext(),getLayoutInflater()));
                 }
             }
 
